@@ -1,0 +1,22 @@
+2026-06-12T18:26:35 | INFO     | ============================================================
+2026-06-12T18:26:35 | INFO     | MLOps Pipeline — Job START
+2026-06-12T18:26:35 | INFO     | ============================================================
+2026-06-12T18:26:35 | INFO     | Loading config from: config.yaml
+2026-06-12T18:26:35 | INFO     | Config validated — seed=42, window=5, version=v1
+2026-06-12T18:26:35 | INFO     | Random seed set: 42
+2026-06-12T18:26:35 | INFO     | Loading dataset from: data.csv
+2026-06-12T18:26:35 | INFO     | Loaded 10000 rows successfully.
+2026-06-12T18:26:35 | INFO     | Computing rolling mean with window=5.
+2026-06-12T18:26:35 | INFO     | Rolling mean computed. Valid rows (window satisfied): 9996 | NaN rows (excluded from signal): 4
+2026-06-12T18:26:35 | INFO     | Generating binary signal (1 if close > rolling_mean, else 0).
+2026-06-12T18:26:35 | INFO     | Signal generation complete. Rows with signal: 9996 | Signal rate: 0.499100
+2026-06-12T18:26:35 | INFO     | Metrics written to: metrics.json
+2026-06-12T18:26:35 | INFO     | ------------------------------------------------------------
+2026-06-12T18:26:35 | INFO     | rows_loaded    : 10000
+2026-06-12T18:26:35 | INFO     | rows_processed : 9996
+2026-06-12T18:26:35 | INFO     | signal_rate    : 0.499100
+2026-06-12T18:26:35 | INFO     | latency_ms     : 66
+2026-06-12T18:26:35 | INFO     | status         : success
+2026-06-12T18:26:35 | INFO     | ============================================================
+2026-06-12T18:26:35 | INFO     | MLOps Pipeline — Job END (success)
+2026-06-12T18:26:35 | INFO     | ============================================================
